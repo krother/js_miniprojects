@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <script>
+        let n = 1;
+
+        function fibonacci(a) {
+            if (a < 2) {
+                return a;
+            }
+            else {
+                return fibonacci(a-1) + fibonacci(a-2);
+
+            }
+        }
+
+        function nextFibo() {
+            var result = fibonacci(n++);
+            document.getElementById("result").innerHTML = result;
+        }
+        </script>
+
+    </head>
+    <body>
+        <h1>Fibonacci</h1>
+        <p>
+        <button type="button" onclick="nextFibo()">Calculate next Fibonacci Number</button>
+        </p>
+
+        <h3>Result:</h3>
+        <p id="result">
+        </p>
+
+    </body>
+</html>
