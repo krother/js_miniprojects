@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <script>
+        function changeColor() {
+            document.getElementById("demo").style.color = "red";
+        }
+        </script>
+
+        <script src="pic.js"></script> 
+
+    </head>
+    <body>
+        <div id="demo"></div>
+        <img id="pic" src="">
+        <p id="invisible">you should not be seeing this</p>
+
+        <p>
+        <button type="button" onclick="changeColor()">Change color</button>
+        <button type="button" onclick="biggerFont()">Make font bigger</button>
+        <button type="button" onclick="showImage()">Show image</button>
+        </p>
+
+        <h3>Result:</h3>
+        <p id="result">
+        </p>
+
+        <script>
+        function biggerFont() {
+            document.getElementById("demo").style.fontSize = "35px";
+        }
+
+        var message = "Hello JavaScript",
+        a = 5, b = 6;
+        document.getElementById("demo").innerHTML = message; 
+        document.getElementById("demo").style.display = "block"; 
+        document.getElementById("invisible").style.display = "none"; 
+
+        // let and var
+        let x = 999;
+        const z = 2;
+        {
+            let x = 777; // x has block scope
+            var y = 888;
+            const z = 3; // z has block scope
+            document.write("x inside block:" + x + "<br>");
+            document.write("y inside block:" + y + "<br>");
+            document.write("z inside block:" + z + "<br>");
+        }
+        document.write("x outside block:" + x + "<br>");
+        document.write("y outside block:" + y + "<br>");
+        document.write("z outside block:" + z + "<br>");
+        // let x = 222; // error
+        // const z = 4; // error
+        var y = 111;  // redeclaration allowed
+        document.write("y after redeclare:" + y + "<br>");
+
+        // const produces a constant reference
+        const pi = 3.14159;
+        // pi = 3333; // error
+
+        const items = ["foo", "bar", "eggs"];
+        items[2] = "cheese"; // items is still mutable
+        items.push("spam");
+        document.write(items + "<br>");
+
+        // numerical types
+        document.write(0.1 + 0.2 +'<br>');
+        document.write(12e3);
+        
+
+        // arithmetics
+        document.getElementById("result").innerHTML = a + b;
+        
+        document.write('<br>' + 6 + 6); // testing only, write may delete entire doc
+        document.write('<br>');
+        document.write(6 + '<br>' + 6); 
+        document.write('<br>');
+        document.write(6 + 6 + '<br>'); 
+        document.write('<br>');
+        // alert(5 + 6); // annoying popup
+        console.log(a + b);
+        
+        // data types
+        var seq = ['a', 'b', 'c'];
+        var obj = {'foo': 1, 'bar': 2};
+        var temp;
+        document.write(typeof 123 + '<br>');
+        document.write(typeof "abc" + '<br>');
+        document.write(typeof seq + '<br>');
+        document.write(typeof obj + '<br>');
+        document.write(typeof temp + '<br>');
+        document.write(temp);
+
+
+        </script>
+    </body>
+</html>
