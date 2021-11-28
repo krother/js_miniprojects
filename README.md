@@ -7,6 +7,9 @@ Small programs I wrote for learning JS:
 2. [Fibonacci](02-fibonacci/fibo.html)
 3. [Prime Painter](03-primes/primes.html)
 4. [Memory](04-memory/memory.html)
+5. [Palindromes](05-palindrome/palindrome.html)
+6. [Caesar Cypher](06-caesar/caesar.html)
+7. [Roman Numbers](07-roman/roman.html)
 
 
 ### License
